@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainSceneController">
+   <children>
+      <HBox layoutY="25.0" prefHeight="374.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="374.0" prefWidth="230.0">
+               <children>
+                  <ImageView fitHeight="160.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true" />
+                  <LineChart prefHeight="214.0" prefWidth="252.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </LineChart>
+               </children>
+            </VBox>
+            <ScrollPane prefHeight="374.0" prefWidth="364.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="380.0" prefWidth="346.0" />
+              </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <ComboBox layoutY="1.0" prefHeight="26.0" prefWidth="158.0" promptText="Sports" />
+      <ComboBox layoutX="158.0" layoutY="1.0" prefHeight="26.0" prefWidth="144.0" promptText="Team" />
+      <ComboBox layoutX="300.0" layoutY="1.0" prefHeight="26.0" prefWidth="144.0" promptText="Player" />
+   </children>
+</AnchorPane>
